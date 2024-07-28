@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: david ross
+Seneca Polytechnic
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: May 31 2033. Cached until: Aug 3 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.40.0.3
+Toolchain Path:  C:\Users\davidross\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.18.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+Z:\Extras\KEIL_WORKSPACE\LAB5b\LAB5b.uvprojx
+Project File Date:  07/28/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Users\davidross\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'LAB5b'
+./lab5b.cpp(48): warning: 'wait' is deprecated: 'wait' is deprecated in favor of explicit sleep functions. To sleep, 'wait' should be replaced by 'ThisThread::sleep_for' (C++) or 'thread_sleep_for' (C). If you wish to wait (without sleeping), call 'wait_us'. 'wait_us' is safe to call from ISR context. [since mbed-os-5.14] [-Wdeprecated-declarations]
+   48 |       wait(0.05);
+      |       ^
+mbed-os\platform/mbed_wait_api.h(72): note: 'wait' has been explicitly marked deprecated here
+   72 | MBED_DEPRECATED_SINCE("mbed-os-5.14",
+      | ^
+mbed-os\platform/mbed_toolchain.h(378): note: expanded from macro 'MBED_DEPRECATED_SINCE'
+  378 | #define MBED_DEPRECATED_SINCE(D, M) MBED_DEPRECATED(M " [since " D "]")
+      |                                     ^
+mbed-os\platform/mbed_toolchain.h(359): note: expanded from macro 'MBED_DEPRECATED'
+  359 | #define MBED_DEPRECATED(M) __attribute__((deprecated(M)))
+      |                                           ^
+1 warning generated.
+compiling lab5b.cpp...
+linking...
+.\BUILD\LAB5b.axf: Warning: L3912W: Option 'legacyalign' is deprecated.
+Program Size: Code=48376 RO-data=8452 RW-data=268 ZI-data=205796  
+Finished: 0 information, 1 warning and 0 error messages.
+".\BUILD\LAB5b.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: NXP
+                https://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MK64F12_DFP.13.1.0.pack
+                NXP::MK64F12_DFP@13.1.0
+                Device Family Pack for MK64F12
+
+<h2>Collection of Component include folders:</h2>
+  C:/Users/davidross/AppData/Local/Arm/Packs/NXP/MK64F12_DFP/13.1.0
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:39
+</pre>
+</body>
+</html>
